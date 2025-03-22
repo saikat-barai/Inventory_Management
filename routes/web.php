@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,7 @@ Route::get('/user/profile', [UserController::class, 'user_profile'])->name('user
 // customer route start
 Route::get('/customer', [CustomerController::class, 'customerPage'])->name('customer');
 // customer route end
+
+// product route start 
+Route::get('/product', [ProductController::class, 'productPage'])->name('product');
+// product route end
