@@ -25,4 +25,8 @@ class UserController extends Controller
     function verify_OTP(){
         return view('pages.auth.verify-otp');
     }
+
+    function user_profile(){
+        return view('pages.dashboard.profile-page');
+    }
 }

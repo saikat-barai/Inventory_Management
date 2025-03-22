@@ -58,7 +58,7 @@
                         <h6>User Name</h6>
                         <hr class="user-dropdown-divider  p-0"/>
                     </div>
-                    <a href="{{url('/userProfile')}}" class="side-bar-item">
+                    <a href="{{ route('user.profile') }}" class="side-bar-item">
                         <span class="side-bar-item-caption">Profile</span>
                     </a>
                     <a href="{{url("/user-logout")}}" class="side-bar-item">
@@ -73,7 +73,7 @@
 
 <div id="sideNavRef" class="side-nav-open">
 
-    <a href="{{url("/dashboard")}}" class="side-bar-item {{ request()->routeIs('dashboardPage') ? 'side-bar-item-active' : '' }}">
+    <a href="{{ route('dashboard') }}" class="side-bar-item {{ request()->routeIs('dashboard') ? 'side-bar-item-active' : '' }}">
         <i class="bi bi-graph-up"></i>
         <span class="side-bar-item-caption">Dashboard</span>
     </a>
@@ -83,7 +83,7 @@
         <span class="side-bar-item-caption">Customer</span>
     </a>
 
-    <a href="{{url("/categoryPage")}}" class="side-bar-item {{ request()->routeIs('categoryPage') ? 'side-bar-item-active' : '' }}">
+    <a href="{{ route('category') }}" class="side-bar-item {{ request()->routeIs('category')? 'side-bar-item-active' : '' }}">
         <i class="bi bi-list-nested"></i>
         <span class="side-bar-item-caption">Category</span>
     </a>

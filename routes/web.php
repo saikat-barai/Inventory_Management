@@ -15,3 +15,4 @@ Route::get('/userLogin', [UserController::class, 'userLogin'])->name('userLogin'
 Route::get('/reset/password', [UserController::class, 'reset_password_page'])->name('reset.password');
 Route::get('/sent/OTP', [UserController::class, 'sent_OTP'])->name('sent.OTP');
 Route::get('/verify/OTP', [UserController::class, 'verify_OTP'])->name('verify.OTP');
+Route::get('/user/profile', [UserController::class, 'user_profile'])->name('user.profile');
