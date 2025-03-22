@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -16,3 +17,7 @@ Route::get('/reset/password', [UserController::class, 'reset_password_page'])->n
 Route::get('/sent/OTP', [UserController::class, 'sent_OTP'])->name('sent.OTP');
 Route::get('/verify/OTP', [UserController::class, 'verify_OTP'])->name('verify.OTP');
 Route::get('/user/profile', [UserController::class, 'user_profile'])->name('user.profile');
+
+// customer route start
+Route::get('/customer', [CustomerController::class, 'customerPage'])->name('customer');
+// customer route end
