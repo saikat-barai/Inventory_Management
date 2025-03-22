@@ -93,7 +93,7 @@
         <span class="side-bar-item-caption">Product</span>
     </a>
 
-    <a href="{{url('/salePage')}}" class="side-bar-item">
+    <a href="{{ route('sale') }}" class="side-bar-item {{ request()->routeIs('sale')? 'side-bar-item-active' : '' }}">
         <i class="bi bi-currency-dollar"></i>
         <span class="side-bar-item-caption">Create Sale</span>
     </a>
