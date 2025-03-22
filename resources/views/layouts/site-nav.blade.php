@@ -98,7 +98,7 @@
         <span class="side-bar-item-caption">Create Sale</span>
     </a>
 
-    <a href="{{url('/invoicePage')}}" class="side-bar-item">
+    <a href="{{ route('invoice') }}" class="side-bar-item {{ request()->routeIs('invoice')? 'side-bar-item-active' : '' }}">
         <i class="bi bi-receipt"></i>
         <span class="side-bar-item-caption">Invoice</span>
     </a>
